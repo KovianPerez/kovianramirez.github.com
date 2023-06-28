@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bugatti</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="ejemplo">
+        <meta name="keywords" content="Porsche, html5">
+        <meta name="author" content="Kovian">
+        <link rel="stylesheet" href="style/bootstrap-5.3.0-dist/bootstrap-5.3.0-dist/css/bootstrap.rtl.min.css"/>
+        <link rel="stylesheet" href="Style/bootstrap-5.3.0-dist/bootstrap-5.3.0-dist/css/bootstrap.rtl.css" type="text/css">
+        <link rel="icon" href="Imagenes/1.png" type="image/png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="ruta/a/animate.min.css">
+        <script src="ruta/a/jquery-3.6.0.min.js"></script>
+        <script src="ruta/a/bootstrap.bundle.min.js"></script>
+
+        <style>
+            .catalog-image {
+                width: 300px;
+                height: 200px;
+                transition: transform 0.3s ease;
+            }
+
+            .catalog-image:hover {
+                transform: scale(1.1);
+            }
+
+            .custom-section {
+                text-align: center;
+            }
+            .catalog-image {
+                width: 300px;
+                height: 200px;
+            }
+
+            .navbar-nav .nav-link:hover {
+                background-color: white;
+                color: black;
+            }
+            .navbar-nav .nav-link {
+                margin-right: 70px;
+            }
+            .carousel-item img {
+                animation-duration: 1s;
+                animation-name: fadeInUp;
+            }
+            @keyframes fadeInUp {
+                0% {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top bg-dark text-white text-center align-content-center container md-5">
+            <div class="container-fluid">
+                <ul class="navbar-nav ml-auto">
+                     <a class="navbar-brand" href="Imagenes/1.png">
+                    <img src="Imagenes/1.png" alt="Mi imagen" class="rounded-circle img-fluid" style="width: 70px; height: 70px;">
+                </a>
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" href="BUggati.html">Bugatti</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" href="Porsche.html">Porsche</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" href="Ferrari.html">Ferrari</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" href="Mercedes.html">Mercedes</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" href="Servicio.html">Atención a clientes</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-md-0">
+                    <div class="input-group">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Buscar">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-light" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+               
+
+            </div>
+        </nav>
+        <br><br><br><br>
+
+        <!-- Solo la primera imagen -->
+        <section class="bg-light py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="Imagenes/Porsche.jpeg" alt="Porsche 1" class="img-fluid animate__animated animate__fadeInUp">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Catálogo de coches -->
+
+
+        <!-- First section -->
+        <section class="bg-light py-5 custom-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <h2 class="display-4 mb-4">Catálogo Porsche</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <img src="Imagenes/718 cayman.jpeg" alt="Coche 1" class="img-fluid catalog-image">
+                        <h3>718 Cayman</h3>
+                        <p>El tiempo de aceleración de 0 a 100 km/h varía según la versión del Porsche 718 Cayman, pero puede estar en el rango de aproximadamente 4,5 a 3,7 segundos.
+                            La velocidad máxima también depende de la versión y puede superar los 280 km/h en las versiones más potentes.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="Imagenes/718 Cayman GT4 RS.jpeg" alt="Coche 2" class="img-fluid catalog-image">
+                        <h3>718 Cayman GT4 RS</h3>
+                        <p>El Porsche 718 Cayman GT4 está equipado con un motor de seis cilindros de aspiración natural.
+                            El motor es de 4.0 litros y ofrece una potencia de alrededor de 414 caballos de fuerza.                                                    
+
+                            El tiempo de aceleración de 0 a 100 km/h se encuentra en el rango de aproximadamente 4.4 segundos.
+                            La velocidad máxima puede superar los 300 km/h.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="Imagenes/911 Turbo S.jpeg" alt="Coche 3" class="img-fluid catalog-image">
+                        <h3>911 Turbo S</h3>
+                        <p>El Porsche 911 Turbo S está equipado con un motor de seis cilindros bóxer de 3.8 litros con doble turbocompresor.
+                            El motor produce una potencia impresionante de alrededor de 640 caballos de fuerza.                      
+
+                            El tiempo de aceleración de 0 a 100 km/h se encuentra en el rango de aproximadamente 2.6 segundos.
+                            La velocidad máxima supera los 300 km/h.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Second section -->
+        <section class="bg-light py-5 custom-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <img src="Imagenes/911 GT3.jpeg" alt="Coche 4" class="img-fluid catalog-image">
+                        <h3>911 GT3</h3>
+                        <p>
+                            El Porsche 911 GT3 es un modelo de alto rendimiento de la icónica línea 911 de Porsche, conocido por su rendimiento en pista y su experiencia de conducción emocionante. A continuación se presentan algunas especificaciones generales del Porsche 911 GT3, aunque es importante tener en cuenta que pueden variar según el año y la configuración específica:
+
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="Imagenes/gt2rs.jpeg"  alt="Coche 5" class="img-fluid catalog-image">
+                        <h3>911 GT2RS</h3>
+                        <p>Motor:
+
+                            El Porsche 911 GT2 RS cuenta con un motor de seis cilindros bóxer de alta potencia y doble turbo.
+                            El motor tiene una cilindrada de aproximadamente 3.8 litros.
+                            La potencia puede alcanzar alrededor de 700 a 800 caballos de fuerza, dependiendo de la generación y la configuración específica.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="Imagenes/Cayenne Turbo GT.jpeg" alt="Coche 6" class="img-fluid catalog-image">
+                        <h3>Cayenne Turbo GT</h3>
+                        <p>Motor:
+
+                            El Porsche 911 GT2 RS cuenta con un motor de seis cilindros bóxer de alta potencia y doble turbo.
+                            El motor tiene una cilindrada de aproximadamente 3.8 litros.
+                            La potencia puede alcanzar alrededor de 700 a 800 caballos de fuerza, dependiendo de la generación y la configuración específica.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pie de pagina -->
+        <footer class="bg-dark text-white py-4">
+            <div class="container text-center">
+                <div class="list-inline-item">
+                    <h5>Contacto:</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>Número de teléfono: 5628466753</p>
+                            <p>Dirección: Popocatépetl 307, Col. Piletas, León, Gto.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Correo electrónico: kovianduron@gmail.com</p>
+                            <p>Síguenos en redes sociales:</p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.facebook.com/"><i class="fab fa-twitter"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.instagram.com/ramirezkovian/"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                            <div><h6>Autor: @Kovian</h6></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body> 
+</html>
+

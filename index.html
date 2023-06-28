@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KOCARS</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="ejemplo">
+        <meta name="keywords" content="KOCARS, html5">
+        <meta name="author" content="Kovian">
+        <link rel="stylesheet" href="style/bootstrap-5.3.0-dist/bootstrap-5.3.0-dist/css/bootstrap.rtl.min.css"/>
+        <link rel="stylesheet" href="Style/bootstrap-5.3.0-dist/bootstrap-5.3.0-dist/css/bootstrap.rtl.css" type="text/css">
+        <link rel="icon" href="Imagenes/1.png" type="image/png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+        <style>
+            .navbar-nav .nav-link:hover {
+                background-color: white;
+                color: black;
+            }
+
+            .navbar-nav .nav-link {
+                margin-right: 70px;
+            }
+
+            .carousel-control {
+                bottom: 0;
+            }
+
+            .carousel-indicators {
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transform: translateX(-50%);
+                z-index: 15;
+            }
+
+            .carousel-indicators li {
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                margin: 0 8px;
+                background-color: rgba(0, 0, 0, 0.5);
+                cursor: pointer;
+            }
+
+            .carousel-indicators .active {
+                background-color: rgba(255, 255, 255, 0.7);
+            }
+
+            .image-container {
+                position: relative;
+            }
+
+            .image-caption {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                padding: 10px;
+                background-color: rgba(0, 0, 0, 0.7);
+                color: #fff;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+
+            .image-container:hover .image-caption {
+                opacity: 1;
+            }
+
+            /* Agregado para justificar el texto y centrar el título */
+            .text-justify {
+                text-align: justify;
+            }
+
+            .text-center {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Barra de navegacion y busqueda -->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top bg-dark text-white text-center align-content-center container md-5">
+            <div class="container-fluid">
+                <ul class="navbar-nav ml-auto">
+                     <a class="navbar-brand" href="Imagenes/1.png">
+                    <img src="Imagenes/1.png" alt="Mi imagen" class="rounded-circle img-fluid " style="width: 70px; height: 70px;">
+                </a>
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" href="BUggati.html">Bugatti</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" href="Porsche.html">Porsche</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" href="Ferrari.html">Ferrari</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" href="Mercedes.html">Mercedes</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" href="Servicio.html">Atención a clientes</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-md-0">
+                    <div class="input-group">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Buscar">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-light" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                
+
+            </div>
+        </nav>
+
+        <!-- Imagenes principales -->
+        <div class="container mt-5">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <ol>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+                    </ol>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="image-container">
+                            <img src="Imagenes/cars p.jpeg" alt="Imagen 1" class="d-block w-100">
+                            <div class="image-caption">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="Imagenes/capp.jpeg" alt="Imagen 2" class="d-block w-100">
+                            <div class="image-caption">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="Imagenes/icp.jpeg" alt="Imagen 3" class="d-block w-100">
+                            <div class="image-caption">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="Imagenes/scc.jpeg" alt="Imagen 4" class="d-block w-100">
+                            <div class="image-caption">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="Imagenes/stc.jpg" alt="Imagen 5" class="d-block w-100">
+                            <div class="image-caption"> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Presentacion -->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="display-5 text-center">KOCARS</h2>
+                    <p class="lead text-justify">En KOCARS, somos una agencia líder en la venta y distribución de automóviles de lujo y deportivos. Nos especializamos en ofrecer a nuestros clientes una selección excepcional de vehículos exclusivos de las marcas más reconocidas a nivel mundial.</p>
+                    <p class="text-justify">Desde nuestro inicio, nos hemos destacado por brindar un servicio personalizado y una atención impecable. Nuestro equipo de expertos apasionados por los automóviles está comprometido en ayudar a nuestros clientes a encontrar el carro de sus sueños, satisfaciendo sus necesidades y superando sus expectativas en todo momento.</p>
+                    <p class="text-justify">En KOCARS, nos enorgullece ofrecer una experiencia de compra única, donde la calidad, el estilo y el rendimiento se unen para crear una conducción excepcional. Ya sea que estés buscando un deportivo potente, un elegante sedán de lujo o un SUV de alto rendimiento, tenemos el automóvil perfecto para ti.</p>
+                    <p class="text-justify">Confía en nosotros para hacer realidad tus sueños automovilísticos. Visítanos en nuestras instalaciones y déjanos ayudarte a encontrar el vehículo que refleje tu estilo de vida y te brinde una experiencia de manejo inigualable.</p>
+                </div>
+                <div class="col-md-6">                   
+                    <img src="Imagenes/Logo moda y estilismo elegante blanco y negro (1).png" alt="pl"  class="img-fluid"/>
+                </div>
+            </div>
+        </div>
+        <!-- Pie de pagina -->
+        <footer class="bg-dark text-white py-4">
+            <div class="container text-center">
+                <div class="list-inline-item">
+                    <h5>Contacto:</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>Número de teléfono: 5628466753</p>
+                            <p>Dirección: Popocatépetl 307, Col. Piletas, León, Gto.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Correo electrónico: kovianduron@gmail.com</p>
+                            <p>Síguenos en redes sociales:</p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.facebook.com/"><i class="fab fa-twitter"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.instagram.com/ramirezkovian/"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                            <div><h6>Autor: @Kovian</h6></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

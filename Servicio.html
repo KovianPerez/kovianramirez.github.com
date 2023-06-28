@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KOCARS Atencion al cliente</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="ejemplo">
+        <meta name="keywords" content="KOCARS services, html5">
+        <meta name="author" content="Kovian">
+        <link rel="stylesheet" href="style/bootstrap-5.3.0-dist/bootstrap-5.3.0-dist/css/bootstrap.rtl.min.css"/>
+        <link rel="stylesheet" href="Style/bootstrap-5.3.0-dist/bootstrap-5.3.0-dist/css/bootstrap.rtl.css" type="text/css">
+        <link rel="icon" href="Imagenes/1.png" type="image/png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+        <style>
+            .navbar-nav .nav-link:hover {
+                background-color: white;
+                color: black;
+            }
+
+            .navbar-nav .nav-link {
+                margin-right: 70px;
+            }
+
+            .carousel-control {
+                bottom: 0;
+            }
+
+            .carousel-indicators {
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transform: translateX(-50%);
+                z-index: 15;
+            }
+
+            .carousel-indicators li {
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                margin: 0 8px;
+                background-color: rgba(0, 0, 0, 0.5);
+                cursor: pointer;
+            }
+
+            .carousel-indicators .active {
+                background-color: rgba(255, 255, 255, 0.7);
+            }
+
+            .image-container {
+                position: relative;
+            }
+
+            .image-caption {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                padding: 10px;
+                background-color: rgba(0, 0, 0, 0.7);
+                color: #fff;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+
+            .image-container:hover .image-caption {
+                opacity: 1;
+            }
+
+            /* Agregado para justificar el texto y centrar el título */
+            .text-justify {
+                text-align: justify;
+            }
+
+            .text-center {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Barra de navegacion y busqueda -->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top bg-dark text-white text-center align-content-center container md-5">
+            <div class="container-fluid">
+                <ul class="navbar-nav ml-auto">
+                     <a class="navbar-brand" href="Imagenes/1.png">
+                    <img src="Imagenes/1.png" alt="Mi imagen" class="rounded-circle img-fluid" style="width: 70px; height: 70px;">
+                </a>
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" href="BUggati.html">Bugatti</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" href="Porsche.html">Porsche</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" href="Ferrari.html">Ferrari</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" href="Mercedes.html">Mercedes</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" href="Servicio.html">Atención a clientes</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-md-0">
+                    <div class="input-group">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Buscar">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-light" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+               
+
+            </div>
+        </nav>
+
+        <!-- Imagenes principales -->
+        <div class="container mt-5">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <ol>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+                    </ol>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="image-container">
+                            <img src="Imagenes/cars p.jpeg" alt="Imagen 1" class="d-block w-100">
+                            <div class="image-caption">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="Imagenes/capp.jpeg" alt="Imagen 2" class="d-block w-100">
+                            <div class="image-caption">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="Imagenes/icp.jpeg" alt="Imagen 3" class="d-block w-100">
+                            <div class="image-caption">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="Imagenes/scc.jpeg" alt="Imagen 4" class="d-block w-100">
+                            <div class="image-caption">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="Imagenes/stc.jpg" alt="Imagen 5" class="d-block w-100">
+                            <div class="image-caption"> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Presentacion -->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="display-5 text-center">KOCARS</h2>
+                    <p class="lead text-justify">Estimado cliente,
+
+                        Gracias por contactar a nuestro equipo de atención al cliente. Valoramos su interés y estamos aquí para ayudarlo en todo lo que necesite. Su satisfacción es nuestra máxima prioridad y nos esforzamos por brindarle el mejor servicio posible.
+
+                        Si tiene alguna pregunta, inquietud o necesita asistencia con respecto a nuestros productos o servicios, no dude en comunicarse con nosotros. Nuestro equipo de expertos estará encantado de ayudarlo y proporcionarle la información y el apoyo necesarios.
+
+                        Valoramos sus comentarios y opiniones, ya que nos ayudan a mejorar continuamente y ofrecerle una experiencia excepcional. Si tiene alguna sugerencia o comentario sobre cómo podemos satisfacer mejor sus necesidades, no dude en hacérnoslo saber.
+
+                        Estamos comprometidos a resolver cualquier problema que pueda surgir y garantizar su satisfacción. Trabajamos diligentemente para brindarle soluciones rápidas y efectivas.
+
+                        Agradecemos su confianza en nuestra empresa y esperamos poder brindarle una excelente experiencia como cliente. No dude en ponerse en contacto con nosotros en cualquier momento. Estamos aquí para usted.
+
+                        Atentamente,
+                        Equipo de Atención al Cliente</p>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <img src="Imagenes/Logo moda y estilismo elegante blanco y negro (1).png" alt="pl" class="img-fluid mx-auto">
+                </div>
+            </div>
+        </div><br><br>
+        <!-- Form -->
+        <div class="container">
+            <div>
+                <p class="text-primary">Contactos de atención</p>
+                <div class="container-fluid bg-light m-5"></div>
+                <div class="table-responsive bg-light m-5 col-6">
+                    <table class="table">
+                        <thead>
+                            <tr class="table-dark">
+                                <td>Puesto</td>
+                                <td>Name</td>
+                                <td>Last Name</td>                                                 
+                                <td>Email</td>
+                                <td>Phone Number</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ventas</td>
+                                <td>Kovian</td>
+                                <td>Ramirez</td>
+                                <td>kovianduron@gmail.com</td>
+                                <td>5628466753</td>
+                            </tr>
+                            <tr>
+                                <td>Taller</td>
+                                <td>Manuel</td>
+                                <td>Perez</td>
+                                <td>Mperez@gmail.com</td>
+                                <td>4773846716</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container ">
+            <div class="bg-light p-3">
+                <h1>Agenda cita</h1>
+            </div>
+            <section>
+                <form action="" method="get">
+                    <div class="form-group">
+                        <label for="txtNombre">Nombre:</label>
+                        <input required type="text" class="form-control" id="txtNombre" name="txtNombre" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label>Selecciona tu género:</label><br>
+                        <label class="mr-3">
+                            <input type="radio" name="txtGenero" value="Masculino"> Masculino
+                        </label>
+                        <label class="mr-3">
+                            <input type="radio" name="txtGenero" value="Femenino"> Femenino
+                        </label>
+                        <label>
+                            <input type="radio" name="txtGenero" value="Otro"> Otro
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtFecha">Fecha de la cita:</label><br>
+                        <input type="date" class="form-control" id="txtFecha" name="txtFecha">
+                    </div>
+                    <div class="form-group">
+                        <label for="hTime">Hora:</label><br>
+                        <input type="time" class="form-control" id="hTime" name="hTime">
+                    </div>
+                    <div class="form-group">
+                        <label for="txtEmail">Correo electrónico:</label><br>
+                        <input required type="email" class="form-control" id="txtEmail" name="txtEmail">
+                    </div>
+                    <div class="form-group">
+                        <label for="tTel">Número de teléfono:</label><br>
+                        <input type="tel" class="form-control" id="tTel" name="tTel">
+                    </div>
+                    <div class="form-group">
+                        <label for="npPassword">Ingresa un NIP de registro:</label><br>
+                        <input type="password" class="form-control" id="npPassword" name="npPassword">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="cbDesplegar" value="Acepto"> Acepto términos y condiciones
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <input type="reset" class="btn btn-secondary" id="nReset" name="nReset" value="Resetear">
+                        <input type="submit" class="btn btn-primary" id="bntEnviar" name="bntEnviar" value="Enviar">
+                    </div>
+                </form>
+            </section>
+        </div><br><br><br><br><br>
+
+
+
+        <!-- Pie de pagina -->
+        <footer class="bg-dark text-white py-4">
+            <div class="container text-center">
+                <div class="list-inline-item">
+                    <h5>Contacto:</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>Número de teléfono: 5628466753</p>
+                            <p>Dirección: Popocatépetl 307, Col. Piletas, León, Gto.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Correo electrónico: kovianduron@gmail.com</p>
+                            <p>Síguenos en redes sociales:</p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.facebook.com/"><i class="fab fa-twitter"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.instagram.com/ramirezkovian/"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                            <div><h6>Autor: @Kovian</h6></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

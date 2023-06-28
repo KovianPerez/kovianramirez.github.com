@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ferrari</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="ejemplo">
+        <meta name="keywords" content="Ferrari, html5">
+        <meta name="author" content="Kovian">
+        <link rel="stylesheet" href="style/bootstrap-5.3.0-dist/bootstrap-5.3.0-dist/css/bootstrap.rtl.min.css"/>
+        <link rel="stylesheet" href="Style/bootstrap-5.3.0-dist/bootstrap-5.3.0-dist/css/bootstrap.rtl.css" type="text/css">
+        <link rel="icon" href="Imagenes/1.png" type="image/png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="ruta/a/animate.min.css">
+        <script src="ruta/a/jquery-3.6.0.min.js"></script>
+        <script src="ruta/a/bootstrap.bundle.min.js"></script>
+
+        <style>
+            .catalog-image {
+                width: 300px;
+                height: 200px;
+                transition: transform 0.3s ease;
+            }
+
+            .catalog-image:hover {
+                transform: scale(1.1);
+            }
+
+            .custom-section {
+                text-align: center;
+            }
+            .catalog-image {
+                width: 300px;
+                height: 200px;
+            }
+
+            .navbar-nav .nav-link:hover {
+                background-color: white;
+                color: black;
+            }
+            .navbar-nav .nav-link {
+                margin-right: 70px;
+            }
+            .carousel-item img {
+                animation-duration: 1s;
+                animation-name: fadeInUp;
+            }
+            @keyframes fadeInUp {
+                0% {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top bg-dark text-white text-center align-content-center container md-5">
+            <div class="container-fluid">
+                <ul class="navbar-nav ml-auto">
+                     <a class="navbar-brand" href="Imagenes/1.png">
+                    <img src="Imagenes/1.png" alt="Mi imagen" class="rounded-circle img-fluid" style="width: 70px; height: 70px;">
+                </a>
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" href="BUggati.html">Bugatti</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" href="Porsche.html">Porsche</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" href="Ferrari.html">Ferrari</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" href="Mercedes.html">Mercedes</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" href="Servicio.html">Atención a clientes</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-md-0">
+                    <div class="input-group">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Buscar">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-light" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                
+
+            </div>
+        </nav>
+        <br><br><br><br>
+
+        <!-- Solo la primera imagen -->
+        <section class="bg-light py-5">
+            <div class="container">
+                <div class="row justify-content-center"> <!-- Añadido justify-content-center para centrar la imagen -->
+                    <div class="col-md-12">
+                        <img src="Imagenes/ffl.jpg" alt="Ferrari 1" class="img-fluid animate__animated animate__fadeInUp">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Catálogo de coches -->
+
+
+        <!-- First section -->
+        <section class="bg-light py-5 custom-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <h2 class="display-4 mb-4">Catálogo Ferrari</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <img src="Imagenes/Ferrari 488 GTB.jpeg" alt="Coche 1" class="img-fluid catalog-image">
+                        <h3>Ferrari 488 GTB</h3>
+                        <p>Motor: V8 biturbo de 3.9 litros.
+                            Potencia: 660 caballos de fuerza.
+                            Aceleración: 0 a 100 km/h en 3 segundos.
+                            Velocidad máxima: Más de 330 km/h.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="Imagenes/Ferrari F8 Tributo.jpeg" alt="Coche 2" class="img-fluid catalog-image">
+                        <h3>Ferrari F8 Tributo</h3>
+                        <p>Motor: V8 biturbo de 3.9 litros.
+                            Potencia: 720 caballos de fuerza.
+                            Aceleración: 0 a 100 km/h en 2.9 segundos.
+                            Velocidad máxima: Más de 340 km/h.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="Imagenes/Ferrari SF90 Stradale.jpeg" alt="Coche 3" class="img-fluid catalog-image">
+                        <h3>Ferrari SF90 Stradale</h3>
+                        <p>Motor: V8 biturbo de 4.0 litros y tres motores eléctricos.
+                            Potencia: 1,000 caballos de fuerza.
+                            Aceleración: 0 a 100 km/h en 2.5 segundos.
+                            Velocidad máxima: Más de 340 km/h.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Second section -->
+        <section class="bg-light py-5 custom-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <img src="Imagenes/Ferrari Portofino.jpeg" alt="Coche 4" class="img-fluid catalog-image">
+                        <h3>Ferrari Portofino</h3>
+                        <p>Motor: V8 biturbo de 3.9 litros.
+                            Potencia: 600 caballos de fuerza.
+                            Aceleración: 0 a 100 km/h en 3.5 segundos.
+                            Velocidad máxima: Más de 320 km/h.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="Imagenes/Ferrari 812 Superfast.jpeg" alt="Coche 5" class="img-fluid catalog-image">
+                        <h3>Ferrari 812 Superfast</h3>
+                        <p>Motor: V12 de 6.5 litros.
+                            Potencia: 800 caballos de fuerza.
+                            Aceleración: 0 a 100 km/h en 2.9 segundos.
+                            Velocidad máxima: Más de 340 km/h.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="Imagenes/Ferrari roma.jpeg" alt="Coche 6" class="img-fluid catalog-image">
+                        <h3>Ferrari Roma</h3>
+                        <p>Motor: V8 biturbo de 3.9 litros.
+                            Potencia: 620 caballos de fuerza.
+                            Aceleración: 0 a 100 km/h en 3.4 segundos.
+                            Velocidad máxima: Más de 320 km/h.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pie de pagina -->
+        <footer class="bg-dark text-white py-4">
+            <div class="container text-center">
+                <div class="list-inline-item">
+                    <h5>Contacto:</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>Número de teléfono: 5628466753</p>
+                            <p>Dirección: Popocatépetl 307, Col. Piletas, León, Gto.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Correo electrónico: kovianduron@gmail.com</p>
+                            <p>Síguenos en redes sociales:</p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.facebook.com/"><i class="fab fa-twitter"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.instagram.com/ramirezkovian/"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                            <div><h6>Autor: @Kovian</h6></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="ruta/a/jquery-3.6.0.min.js"></script>
+        <script src="ruta/a/bootstrap.bundle.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.carousel').carousel();
+            });
+        </script>
+    </body>
+</html>
+
